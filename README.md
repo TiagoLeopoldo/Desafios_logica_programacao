@@ -1,6 +1,5 @@
 # Lógica de Programação
-"Eu acho que todas as pessoas neste país deveriam aprender como programar um computador porque isto te ensina como pensar."
-Steve Jobs – Inventor
+Aprender lógica de programação não é apenas para futuros programadores, mas sim uma forma de “ensinar a pensar” de maneira estruturada, melhorando o raciocínio, a capacidade de resolver problemas complexos e o desempenho em outros assuntos. É uma habilidade que estimula a criatividade, a resiliência e o pensamento analítico, preparando os estudantes para os desafios do mercado de trabalho atual. 
 
 Lógica de Programação é a forma como nós, Pessoas Desenvolvedoras, pensamos e escrevemos algoritmos para resoluções de problemas ou execuções de tarefas processadas por uma máquina.
 
@@ -66,18 +65,3 @@ Confira abaixo os links para estudo:
 * [If...else MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/if...else)
 * [JavaScript if else and else if W3](https://www.w3schools.com/js/js_if_else.asp)
 * [JavaScript if/else Statement W3](https://www.w3schools.com/jsref/jsref_if.asp)
-
-
-### Tutorial de como traduzir o W3 schools
-
-Quando o site for aberto, ao lado direito superior vai ter um “botão” com o formato do planeta :
-<br>
-<img src="imagens_tutorial/img1.png">
-
-Clicando nele uma barra de busca vai ser aberta, onde devemos escolher em qual idionma queremos ver o site:
-<br>
-<img src="imagens_tutorial/img2.png">
-
-Agora é só escolher o idioma:
-<br>
-<img src="imagens_tutorial/img3.png">
