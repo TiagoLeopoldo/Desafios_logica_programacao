@@ -17,6 +17,8 @@ Saída:
 
 function converteType(string) {
   // Desenvolva seu código nessa função
+  let number = Number(string);
+  return number;
 }
 
 module.exports = converteType;

@@ -33,6 +33,33 @@ Senão, retorne:
 
 function includeA(word) {
   // Desenvolva seu código nessa função
+  let lowerCaseLetters = word.toLowerCase();
+  let firstLetter = lowerCaseLetters[0];
+  let lastLetter = lowerCaseLetters[lowerCaseLetters.length - 1];
+  let middleLetters = lowerCaseLetters.slice(1, -1);
+  let aInMiddle = middleLetters.includes('a');
+  let hasA = lowerCaseLetters.includes('a');
+
+
+  if (firstLetter === 'a' && lastLetter !== 'a' && !aInMiddle) {
+    return `A palavra ${word} possui a letra 'a' apenas como primeira letra.`;
+  };
+
+  if (lastLetter === 'a' && firstLetter !== 'a'  && !aInMiddle) {
+    return `A palavra ${word} possui a letra 'a' apenas como última letra.`;
+  };
+
+  if (firstLetter === 'a' && lastLetter === 'a' && !aInMiddle) {
+    return `A palavra ${word} possui a letra 'a' apenas no começo e no fim da palavra.`;
+  }
+
+  if (aInMiddle && firstLetter !== 'a' && lastLetter !== 'a') {
+    return `A palavra ${word} possui a letra 'a', porém não é a primeira nem a última letra.`;
+  }
+
+  if (!hasA) {
+    return `A palavra ${word} não contém a letra 'a'.`;
+  }
 }
 
 module.exports = includeA;

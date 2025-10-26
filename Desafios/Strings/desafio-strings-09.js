@@ -15,6 +15,31 @@ u - 1
 
 function encodeMessage(string) {
   // Desenvolva seu código nessa função
+  let newWord = '';
+  for (let i = 0; i < string.length; i++) {
+    let word = string[i];
+    switch (word) {
+      case 'a':
+        newWord += word.replace('a', '5');
+        break
+      case 'e':
+        newWord += word.replace('e', 'b');
+        break
+      case 'i':
+        newWord += word.replace('i', '9');
+        break
+      case 'o':
+        newWord += word.replace('o', 'p');
+        break
+      case 'u':
+        newWord += word.replace('u', '1');
+        break
+      default:
+        newWord += word;
+        break
+    }
+  }
+  return newWord;
 }
 
 module.exports = encodeMessage;
