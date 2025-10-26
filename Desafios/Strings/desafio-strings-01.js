@@ -18,6 +18,8 @@ Saída:
 
 function reverseNames(fullName) {
   // Desenvolva seu código nessa função
+  let name = fullName.split(" ");
+  return name[1] + " " + name[0];
 }
 
 module.exports = reverseNames;
