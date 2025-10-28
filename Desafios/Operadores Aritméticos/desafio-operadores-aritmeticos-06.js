@@ -14,6 +14,8 @@ Escreva o algoritmo usado por André para calcular seu próprio IMC e o retorne.
 
 function IMC(weight, height){
   // Desenvolva seu código nessa função
+  const imc =  Math.pow(height, 2) / weight;
+  return imc;
 }
 
 module.exports = IMC;

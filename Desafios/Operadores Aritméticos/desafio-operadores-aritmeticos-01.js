@@ -12,6 +12,9 @@ Escreva um algoritmo que recebe 3 valores, calcule e retorne o valor da média n
 
 function average(number1, number2, number3){
   // Desenvolva seu código nessa função
+  let sumResult = number1 + number2 + number3;
+  let averageValue = sumResult / 3;
+  return `O Valor médio é: ${averageValue}`
 }
 
 module.exports = average;

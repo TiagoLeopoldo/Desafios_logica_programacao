@@ -13,6 +13,8 @@ Escreva um algoritmo que calcule a área de um triângulo.
 
 function triangleArea(base, height){
   // Desenvolva seu código nessa função
+  const triangleArea = (base * height) / 2;
+  return `A área do triângulo de base ${base} e altura ${height} é: ${triangleArea}`;
 }
 
 module.exports = triangleArea;
