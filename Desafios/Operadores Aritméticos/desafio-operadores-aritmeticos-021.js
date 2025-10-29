@@ -17,6 +17,17 @@ Retorne uma mensagem no seguinte formato:
 
 function weightedAverage(score1, score2, score3) {
   // Desenvolva seu código nessa função
-}
+  const firstScore = score1 * 0.3;
+  const secondScore = score2 * 0.3;
+  const thirdScore = score3 * 0.4;
+
+  const media = firstScore + secondScore + thirdScore
+
+  if (media >= 6) {
+    return `Aprovação, média: ${media.toFixed(1)}`;
+  } else if (media < 6) {
+    return `Reprovação, média: ${media.toFixed(1)}`;
+  };
+};
 
 module.exports = weightedAverage;

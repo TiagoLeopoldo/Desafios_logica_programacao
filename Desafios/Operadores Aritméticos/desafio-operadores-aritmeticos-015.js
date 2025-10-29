@@ -16,6 +16,10 @@ Obs2: Exiba a área com apenas duas casas decimais.
 
 function areaCircle(diameter) {
   // Desenvolva seu código nessa função
+  const r = diameter / 2;
+  const areaOfACircle = Math.PI * (r ** 2);
+
+  return `A circunferência de raio ${r} cm possui uma área de ${areaOfACircle.toFixed(2)} cm quadrados`
 }
 
 module.exports = areaCircle;
