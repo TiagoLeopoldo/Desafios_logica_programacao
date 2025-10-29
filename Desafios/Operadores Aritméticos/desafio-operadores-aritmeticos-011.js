@@ -22,6 +22,10 @@ Obs: seguir o mesmo formato de retorno da mensagem de saída.
 
 function paymentOptions(price) {
   // Desenvolva seu código nessa função
+  const paymentReceivedInFull = price - (price * 0.1);
+  const installmentPayment = (price + price * 0.15) / 4;
+
+  return `À Vista: R$${Number(paymentReceivedInFull.toFixed(2))} ou 4x de: R$${Number(installmentPayment.toFixed(2))}`;
 }
 
 module.exports = paymentOptions;

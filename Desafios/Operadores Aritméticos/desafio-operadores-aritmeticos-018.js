@@ -10,6 +10,8 @@ Exemplo: um D-6 vai sortear um número entre 1 e 6.
 
 function rollDice(diceSide) {
   // Desenvolva seu código nessa função
+  const diceNumber = Math.floor(Math.random() * Number(diceSide)) + 1 ;
+  return diceNumber;
 }
 
 module.exports = rollDice;

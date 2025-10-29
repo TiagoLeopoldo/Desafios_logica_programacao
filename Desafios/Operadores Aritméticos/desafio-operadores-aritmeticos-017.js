@@ -26,6 +26,17 @@ Valor Total do Carro: R$46750,00.
 
 function carFinancing(carPrice, entranceValue, quota) {
   // Desenvolva seu código nessa função
+  const financedAmount = carPrice - entranceValue;
+  const interestAmount = financedAmount * 0.05;
+  const installmentValue = (financedAmount + interestAmount) / quota;
+  const totalValue = carPrice + interestAmount;
+
+return `Valor Financiado: R$${financedAmount.toFixed(2).replace('.', ',')};
+Valor do Juros: R$${interestAmount.toFixed(2).replace('.', ',')};
+Quantidade de Parcelas: ${quota};
+Valor da Parcela: R$${installmentValue.toFixed(2).replace('.', ',')};
+Valor Total do Carro: R$${totalValue.toFixed(2).replace('.', ',')}.`
+
 }
 
 module.exports = carFinancing;

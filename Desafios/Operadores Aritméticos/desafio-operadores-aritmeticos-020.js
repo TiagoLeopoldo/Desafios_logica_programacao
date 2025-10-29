@@ -17,6 +17,14 @@ Retorne uma mensagem no seguinte formato:
 
 function avaliador(score1, score2, score3) {
   // Desenvolva seu código nessa função
+  const sumScore = score1 + score2 + score3;
+  const media = sumScore / 3;
+
+  if (media >= 6) {
+    return `Aprovação, média: ${media.toFixed(0)}`;
+  } else if (media < 6) {
+    return `Reprovação, média: ${media.toFixed(0)}`;
+  };
 }
 
 module.exports = avaliador;

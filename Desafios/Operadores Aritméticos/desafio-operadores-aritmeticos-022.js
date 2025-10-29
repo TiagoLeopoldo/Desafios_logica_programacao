@@ -19,6 +19,11 @@ calcule a pontuação final da pessoa jogadora e a retorne no formato:
 
 function calculateScore(distance) {
   // Desenvolva seu código nessa função
+
+  const pointForFive = Math.floor((distance / 5) * 2);
+  const pointForOne = distance;
+
+  return `A pontuação da pessoa jogadora foi de ${Number((pointForFive + pointForOne).toFixed(0))}`
 }
 
 module.exports = calculateScore;
