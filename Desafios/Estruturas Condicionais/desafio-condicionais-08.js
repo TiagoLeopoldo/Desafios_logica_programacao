@@ -11,6 +11,17 @@ Escreva um algoritmo que recebe a idade de Marina, Silvia e Iza e retorne a mens
 
 function findYoungerPerson(marinaAge, silviaAge, izaAge){
   // Desenvolva seu código nessa função
+  if (marinaAge < silviaAge && marinaAge < izaAge) {
+    return `Marina é a mais jovem e possui ${marinaAge} anos de idade.`;
+  }
+
+  if (silviaAge < marinaAge && silviaAge < izaAge) {
+    return `Silvia é a mais jovem e possui ${silviaAge} anos de idade.`;
+  }
+
+  if (izaAge < marinaAge && izaAge < silviaAge) {
+    return `Iza é a mais jovem e possui ${izaAge} anos de idade.`;
+  }
 }
 
 module.exports = findYoungerPerson;

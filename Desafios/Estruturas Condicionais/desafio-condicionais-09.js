@@ -36,6 +36,14 @@ Caso a pessoa não tenha conseguido entregar o projeto retorne:
 
 function evaluateProject(obj) {
   // Desenvolva seu código nessa função
+  if (!obj.rec && obj.completed >= 0.8 * obj.reqs) {
+    return "Parabéns, você está aprovado(a)!";
+  }
+
+  if (obj.rec && obj.completed >= 0.9 * obj.totalReqs) {
+    return "Parabéns, você está aprovado(a)!";
+  }
+  return "Você ainda precisa entregar mais requisitos ;)";
 }
 
 module.exports = evaluateProject;

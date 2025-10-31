@@ -25,6 +25,19 @@ O retorno deve ser no seguinte formato:
 
 function basalMetabolicRate(age, sex, weight, height){
   // Desenvolva seu código nessa função
+  const ageInfo = age > 0 ? age : '';
+  const sexInfo = sex === 'M' || sex === 'F' ? sex : '';
+  const weightInfo = weight > 0 ? weight : null;
+  const heightInfo = height > 0 ? height: null;
+  let metabolicRate = 0;
+
+  if (sexInfo === 'M') {
+    metabolicRate = (heightInfo * 6.25) + (weightInfo * 9.99) - (ageInfo * 4.92) + 5;
+    return `A taxa metabólica basal é: ${metabolicRate.toFixed(2)} Kcal.`;
+  } else if (sexInfo === 'F') {
+    metabolicRate = (heightInfo * 6.25) + (weightInfo * 9.99) - (ageInfo * 4.92) - 161;
+    return `A taxa metabólica basal é: ${metabolicRate.toFixed(2)} Kcal.`;
+  }
 }
 
 module.exports = basalMetabolicRate;

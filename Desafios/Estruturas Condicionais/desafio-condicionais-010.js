@@ -40,6 +40,16 @@ Caso o contrário, retorne:
 
 function droneDelivery(heightBox, widthBox, depthBox, heightWindow, widthWindow, depthWindow){
   // Desenvolva seu código nessa função
+  if (heightBox < heightWindow) {
+    if (widthBox < widthWindow) {
+      if (depthBox < depthWindow) {
+        return "É possível realizar a entrega.";
+      }
+      return "Não é possível realizar a entrega.";
+    }
+    return "Não é possível realizar a entrega.";
+  }
+  return "Não é possível realizar a entrega.";
 }
 
 module.exports = droneDelivery;

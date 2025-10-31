@@ -35,6 +35,18 @@ Caso o comando não for reconhecido, retorne:
 
 function polyglotDinosaur(command){
   // Desenvolva seu código nessa função
-}
+  switch (command) {
+    case 'esquerda':
+      return 'english';
+    case 'direita':
+      return 'français';
+    case 'nenhuma':
+      return 'português';
+    case 'as duas':
+      return 'Ai eu caiu, né!!'
+    default:
+      return 'Comando desconhecido.';
+  };
+};
 
 module.exports = polyglotDinosaur;
